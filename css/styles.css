@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    /* border: solid 1px red; */
 }
 
 a{
@@ -12,28 +13,57 @@ a{
 }
 
 .header{
-    display: flex;
-    padding: 32px 200px;
-    
+    display: flex; 
 }
 
 .logo{
     flex: 1;
-    /* background-color: aquamarine; */
     font-weight: bold;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .links{
     display: flex;
     justify-content: end;
-    /* background-color: red; */
     justify-content: space-between;
     flex: 1 100px;
-    font-size: 22px;
 }
 
 .hero{
     background-color: #1f2937;
-    height: 80vh;
+    color: white;
+    height: 60vh;
+    padding: 32px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-info{
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-img{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+}
+
+.sign-up{
+    padding: 5px 20px;
+    background-color: #3882f6;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+h1,
+p{
+    margin-bottom: 20px;
 }
