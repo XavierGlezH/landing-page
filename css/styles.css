@@ -33,13 +33,14 @@ a{
     background-color: #1f2937;
     color: white;
     height: 60vh;
-    padding: 32px 150px;
+    /* padding: 32px 150px; */
     display: flex;
     flex-direction: column;
 }
 
 .hero-content{
     display: flex;
+    flex-wrap: wrap;
     flex: 1;
     align-items: center;
     justify-content: center;
@@ -56,14 +57,66 @@ a{
     justify-content: end;
 }
 
-.sign-up{
-    padding: 5px 20px;
-    background-color: #3882f6;
-    border-radius: 8px;
-    font-size: 12px;
+.action-btn{
+    margin-top: 40px;
 }
 
-h1,
-p{
+.sign-up{
+    padding: 7px 22px;
+    background-color: #3882f6;
+    border-radius: 8px;
+    font-size: 14px;
+    
+}
+
+h1{
     margin-bottom: 20px;
 }
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 32px 150px; */
+}
+
+h2{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.item{
+    width: 180px;
+}
+
+.item p{
+    text-align: center;
+    margin-top: 5px;
+    color: #1f2937;
+}
+
+img{
+    width: 180px;
+    height: auto;
+    border: solid 3px #3882f6;
+    border-radius: 15px;
+}
+
+.feature, .hero{
+    padding: 32px 150px;  
+}
+@media only screen and (min-width: 1500px) {
+    .feature, .hero{
+        padding: 32px 300px;  
+    }
+}
+
+
+
