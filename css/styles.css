@@ -7,116 +7,197 @@
     /* border: solid 1px red; */
 }
 
-a{
-    text-decoration: none;
+.section1{
+    height: 600px;
+    min-width: 250px;
     color: white;
+    background-color: #1f2937;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 30px;
 }
 
 .header{
-    display: flex; 
-}
-
-.logo{
-    flex: 1;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.links{
     display: flex;
-    justify-content: end;
-    justify-content: space-between;
-    flex: 1 100px;
+    flex-wrap: wrap;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.header ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+.header .logo{
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.header .logo,
+.header nav{
+    padding-bottom: 10px;
 }
 
 .hero{
-    background-color: #1f2937;
-    color: white;
-    height: 60vh;
-    /* padding: 32px 150px; */
-    display: flex;
-    flex-direction: column;
-}
-
-.hero-content{
+    /* background-color: grey; */
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
 }
 
-.hero-info{
-    flex: 1;
-    padding-right: 40px;
-}
-
-.hero-img{
+.hero .info{
+    /* background-color: gray; */
     flex: 1;
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 20px;
+    min-width: 164px;
 }
 
-.action-btn{
-    margin-top: 40px;
+.hero .vid{
+    /* background-color: bisque; */
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.sign-up{
+.hero .vid video{
+    width: 500px;
+}
+
+.hero .info .btn{
+    display: flex;
+}
+
+.hero .info .btn a{
     padding: 7px 22px;
     background-color: #3882f6;
     border-radius: 8px;
+    color: white;
+    text-decoration: none;
     font-size: 14px;
-    
+    width: auto;
+    align-items: center;
 }
 
-h1{
-    margin-bottom: 20px;
-}
-
-.feature{
+.section2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 32px 150px; */
 }
 
-h2{
+.section2 h2{
     font-weight: bold;
-    margin-bottom: 30px;
+    margin: 30px 0px;
+    text-align: center;
 }
 
-.cards{
+.section2 .cards{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 30px;   
 }
 
-.item{
-    width: 180px;
+.cards .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.item img,
 .item p{
-    text-align: center;
-    margin-top: 5px;
-    color: #1f2937;
+    width: 150px;
 }
 
-img{
-    width: 180px;
+
+.item img{
     height: auto;
     border: solid 3px #3882f6;
     border-radius: 15px;
 }
 
-.feature, .hero{
-    padding: 32px 150px;  
+.item p{
+    text-align: center;
+    word-wrap: break-word;
+    margin-top: 5px;
+    color: #1f2937;
 }
-@media only screen and (min-width: 1500px) {
-    .feature, .hero{
-        padding: 32px 300px;  
+
+
+
+
+
+
+
+/* Video responsiveness for different screen sizes*/
+@media only screen and (max-width: 890px) {
+    .hero .vid{
+        justify-content: flex-start;
+    } 
+}
+
+@media only screen and (max-width: 710px) {
+    .hero .vid video{
+        width: 400px;
     }
 }
 
+@media only screen and (max-width: 450px) {
+    .hero .vid video{
+        width: 290px;
+    }
+}
 
+@media only screen and (max-width: 340px) {
+    .hero .vid video{
+        width: 204px;
+    }
+}
 
+/* Padding responsiveness for different screen sizes*/
+@media only screen and (min-width: 890px) {
+    .section1,
+    .section2{
+        padding: 25px 80px;
+    }   
+}
+
+@media only screen and (min-width: 1200px) {
+    .section1,
+    .section2{
+        padding: 25px 200px;
+    }    
+}
+
+@media only screen and (min-width: 1400px) {
+    .section1,
+    .section2{
+        padding: 25px 300px;
+    }    
+}
+
+/* Section 2 responsiveness*/
+@media only screen and (min-width: 1300px) {
+    .item img,
+    .item p{
+        width: 180px;
+    }
+    .section2 .cards{
+        gap: 50px;
+    }
+}
