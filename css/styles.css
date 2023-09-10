@@ -173,6 +173,7 @@
 .section4 .action{
     display: flex;
     align-items: center;
+    gap: 8px;
     background-color: #3882f6;
     color: white;
     padding: 40px 80px;
@@ -271,3 +272,14 @@ footer{
         gap: 50px;
     }
 }
+
+/* Section 4 responsiveness*/
+@media only screen and (max-width: 480px) {
+    .section4 .action{
+        padding: 40px 20px;
+    }
+}
+
+
+
+
