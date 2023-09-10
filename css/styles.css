@@ -165,7 +165,48 @@
     text-align: end;
 }
 
+.section4{
+    display: flex;
+    justify-content: center;
+}
 
+.section4 .action{
+    display: flex;
+    align-items: center;
+    background-color: #3882f6;
+    color: white;
+    padding: 40px 80px;
+    margin: 50px 25px;
+    width: 800px;
+    border-radius: 10px;
+}
+
+.action .info{
+    flex: 1;   
+}
+
+.action .info p{
+    font-weight: 100;
+}
+.action .btn a{
+    padding: 7px 22px;
+    border-radius: 8px;
+    border: solid 2px white;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+    color: white;
+    background-color: #1f2937;
+    font-size: 15px;
+    font-weight: 100;
+}
 
 /* Video responsiveness for different screen sizes*/
 @media only screen and (max-width: 890px) {
